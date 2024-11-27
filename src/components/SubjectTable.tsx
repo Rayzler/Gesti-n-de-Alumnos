@@ -60,6 +60,8 @@ export function SubjectTable({idStudent}: SubjectTableProps) {
                                 className="bg-gray-700 text-white px-2 py-1 rounded w-full text-center"
                                 readOnly={editingSubject !== grade.id}
                                 disabled={editingSubject !== grade.id}
+                                min={0}
+                                max={10}
                             />
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap gap-3 flex justify-center w-96">
